@@ -1,0 +1,158 @@
+body {
+	
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(120deg, #e3f2fd, #fce4ec);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 1% 15%; /* 5% сверху и снизу, 10% по бокам */
+  box-sizing: border-box;
+  background-color: #fdfdfd; /* можно убрать, если уже есть фон */
+}
+
+header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#search {
+  display: block;
+  margin: 20px auto;
+  width: 60%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 600px;
+  min-width: 280px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#product-list li {
+  background: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+#product-list li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+#product-list img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+table {
+  width: 80%;
+  max-width: 600px;
+  min-width: 280px;
+  margin: 10px auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.3em;
+}
+
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#summary {
+  text-align: center;
+  margin: 20px;
+}
+
+#daily-calories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+#daily-calories button {
+  background: #ffb74d;
+}
+#daily-calories button:hover {
+  background: #ffa726;
+}
+
+
+#progress-container {
+  width: 70%;
+  background: #eee;
+  height: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+#progress-bar {
+  height: 70%;
+  background: linear-gradient(90deg, #81c784, #64b5f6);
+  width: 60%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+button {
+  background: #64b5f6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #42a5f5;
+}
+
+@media (max-width: 600px) {
+  #search, table {
+    width: 95%;
+  }
+}

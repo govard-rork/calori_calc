@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Калькулятор калорий</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-info">
+      <div id="datetime"></div>
+      <div id="weather"></div>
+    </div>
+    <button id="lang-toggle">🇷🇺 / 🇬🇧</button>
+  </header>
+
+  <main>
+    <h1 data-ru="Калькулятор калорий" data-en="Calorie Counter">Калькулятор калорий</h1>
+
+    <!-- Поиск -->
+    <input type="text" id="search" placeholder="🔍 Найти продукт..." />
+
+    <!-- Список продуктов -->
+    <ul id="product-list"></ul>
+
+    <!-- Выбранные продукты -->
+    <section id="selected-section">
+      <h2 data-ru="Выбранные продукты" data-en="Selected items">Выбранные продукты</h2>
+      <table id="selected">
+        <thead>
+          <tr>
+            <th data-ru="Продукт" data-en="Product">Продукт</th>
+            <th data-ru="Граммы" data-en="Grams">Граммы</th>
+            <th data-ru="Калории" data-en="Calories">Калории</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Итог и управление -->
+    <section id="summary">
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <p id="total">Итого: 0 / 2000 ккал</p>
+
+      <div id="daily-goal">
+        <button id="change-goal" class="btn" data-ru="Изменить дневную норму" data-en="Change daily goal">
+          Изменить дневную норму
+        </button>
+      </div>
+
+      <button id="clear" class="btn danger" data-ru="Очистить всё" data-en="Clear all">
+        Очистить всё
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2025 | Проект Миланы</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
